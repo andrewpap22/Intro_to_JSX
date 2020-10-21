@@ -1,8 +1,15 @@
 // First thing is to, instlal the dependencies that we need for the app
 // And then require them into the index.js file as shown below.
 
-var React = require("react");
-var ReactDOM = require("react-dom");
+//var React = require("react");
+//var ReactDOM = require("react-dom");
+
+// The new way of importing modules in ES6 is the following:
+
+// import React from "react";
+// import ReactDOM from "react-dom";
+
+// And that makes the code cleaner instead of having to set variables.
 
 /* In order to use react to actually create something on screen
  * we're going to use the render function.
@@ -10,4 +17,37 @@ var ReactDOM = require("react-dom");
  *        that informs when that render function has completed.);
  * */
 
-ReactDOM.render(<h1>Hello World!</h1>, document.getElementById("root"));
+//ReactDOM.render(<h1>Hello World!</h1>, document.getElementById("root"));
+
+// ReactDOM.render(
+//   <div>
+//     <h1>Test!</h1>
+//     <p>This is a paragraph!</p>
+//   </div>,
+//   document.getElementById("root")
+// );
+
+// ------ Challenge! --------
+
+/* 1. Create a react app from scratch
+ * 2. It tshould display an h1 heading.
+ * 3. It should display an unordered list (bullet points)
+ * 4. It should contain 3 list elements.
+ * */
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+ReactDOM.render(
+  <div>
+    <h1> My 3 Favourite Sport Activities </h1>
+    <ul>
+      <li>Weightlifting</li>
+      <li>Callisthenics</li>
+      <li>Basketball</li>
+    </ul>
+  </div>,
+  document.getElementById("root")
+);
+
+// -------- End of Challenge -------
