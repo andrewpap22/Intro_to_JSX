@@ -89,15 +89,62 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const myName = "Mirella";
-const currentYear = 2020;
+// const myName = "Mirella";
+// //const currentYear = 2020;
+
+// var d = new Date(); //returns current date (whole one)
+// var n = d.getFullYear(); //gets only the year from the above line
+
+// ReactDOM.render(
+//   <div>
+//     <p>Created by {myName}</p>
+//     <p>&copy; {n}</p>
+//   </div>,
+//   document.getElementById("root")
+// );
+
+// ------- End of challenge2 --------
+
+/* ---- Add styling to our apps with react ----- */
+
+/* So the way that we add stling to our apps with react is:
+ * add an attribute class caleed: clsasName (and not simply class)
+ * and then apply the styling in the css file refering to that class
+ * as you would normaly do in an html file.
+ * Kepp in mind that, because the HTML is compiled down to javascript
+ * we have to keep using the camelCase everywhere, that is true as well
+ * for the html attributes as you can see below. */
+
+// ReactDOM.render(
+//   <div>
+//     <h1 className="heading">My Favourite Sports</h1>
+//     <div>
+//       <img
+//         className="img"
+//         alt="img1"
+//         src="https://i.pinimg.com/originals/e0/90/b2/e090b2655238e071ae4cd58465292c60.jpg"
+//       ></img>
+//       <img
+//         className="img"
+//         alt="img2"
+//         src="https://i.pinimg.com/originals/1e/32/07/1e32072af42cb87a83f3194a9e611378.jpg"
+//       ></img>
+//       <img
+//         className="img"
+//         alt="img3"
+//         src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/outdoors-basketball-court-night-andersen-ross.jpg"
+//       ></img>
+//     </div>
+//   </div>,
+//   document.getElementById("root")
+// );
+
+const img = "https://picsum.photos/200";
 
 ReactDOM.render(
   <div>
-    <p>Created by {myName}</p>
-    <p>&copy; {currentYear}</p>
+    <h1 className="header">Random Image</h1>
+    <img src={img + "?grayscale"} alt="a random pic"></img>
   </div>,
   document.getElementById("root")
 );
-
-// ------- End of challenge2 --------
