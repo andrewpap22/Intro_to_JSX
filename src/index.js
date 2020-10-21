@@ -35,8 +35,8 @@
  * 4. It should contain 3 list elements.
  * */
 
-import React from "react";
-import ReactDOM from "react-dom";
+// import React from "react";
+// import ReactDOM from "react-dom";
 
 // ReactDOM.render(
 //   <div>
@@ -52,18 +52,18 @@ import ReactDOM from "react-dom";
 
 // -------- End of Challenge -------
 
-const fname = "Mirella ";
-const lname = "Matsi";
-const wholeName = fname + lname;
-const luckyNumber = 22;
+// const fname = "Mirella ";
+// const lname = "Matsi";
+// const wholeName = fname + lname;
+// const luckyNumber = 22;
 
-ReactDOM.render(
-  <div>
-    <h1>Hello, {wholeName}!</h1>
-    <p>Your lucky number is: {luckyNumber}</p>
-  </div>,
-  document.getElementById("root")
-);
+// ReactDOM.render(
+//   <div>
+//     <h1>Hello, {wholeName}!</h1>
+//     <p>Your lucky number is: {luckyNumber}</p>
+//   </div>,
+//   document.getElementById("root")
+// );
 
 /* So as we can see with the above code, JSX allows us to use
  * javascript inside the html that is inside our javascript,
@@ -76,3 +76,28 @@ ReactDOM.render(
  * inside it! Or we can even generate a random number like below:
  * {Math.floor(Math.random() * 10)} will give us 0-9 "random" numbers
  * */
+
+/* ------- Another challenge! --------- */
+
+/* 1. Create a react app from scratch.
+ * 2. it should display 2 paragraph HTML elements.
+ * 3. The paragraphs should say:
+ *  Created by YOURNAME
+ *  'Copyright Symbol' CURRENTYEAR
+ * */
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+const myName = "Mirella";
+const currentYear = 2020;
+
+ReactDOM.render(
+  <div>
+    <p>Created by {myName}</p>
+    <p>&copy; {currentYear}</p>
+  </div>,
+  document.getElementById("root")
+);
+
+// ------- End of challenge2 --------
